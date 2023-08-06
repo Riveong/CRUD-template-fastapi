@@ -77,4 +77,4 @@ async def delete_todo(id: int) -> dict:
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, host="0.0.0.0", port=port, timeout_keep_alive=1200)
+     uvicorn.run("app.api:app", host="0.0.0.0", port=port, reload=True)
