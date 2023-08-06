@@ -16,7 +16,7 @@ todos = [
 ]
 
 data = "what"
-
+app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -25,7 +25,7 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-app = FastAPI()
+
 
 @app.get("/")
 def getItems():
